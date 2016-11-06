@@ -1,0 +1,10 @@
+- Header Component
+- Cart Sidebar Component
+- CartList Component : will contains all cart item
+  - Cart Item
+    - Cart Item Image Slider
+    - Cart Item Customization
+      - Cart Item Customization Color
+      - Cart Item Customization Size
+      - Cart Item Customization Add to cart
+  - Cart Item Info
