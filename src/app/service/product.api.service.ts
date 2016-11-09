@@ -34,7 +34,9 @@ export interface Customization {
 
 @Injectable()
 export class ProductApiServiceMock {
-  mockProducts: Product[] = [
+
+  getProducts(): Promise<Product[]> {
+    const mockProducts: Product[] = [
     {
       items: [
         {
@@ -61,7 +63,6 @@ export class ProductApiServiceMock {
       }
     }
   ];
-  getProducts(): Promise<Product[]> {
-    return Promise.resolve(this.mockProducts);
+    return Promise.resolve(mockProducts);
   }
 }
