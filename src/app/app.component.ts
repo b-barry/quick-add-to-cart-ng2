@@ -8,7 +8,7 @@ import { ProductApiService } from './service';
 })
 export class AppComponent implements OnInit {
   title = 'app works!';
-  products;
+  products= [];
 
   constructor(private productApi: ProductApiService) {
   }
