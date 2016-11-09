@@ -1,26 +1,5 @@
 <ul class="cd-gallery">
-	<li>
-		<cart-item></cart-item>
-		<cart-item-info></cart-item-info>
-	</li>
-	<li>
-		<cart-item></cart-item>
-		<cart-item-info></cart-item-info>
-	</li>
-	<li>
-		<cart-item></cart-item>
-		<cart-item-info></cart-item-info>
-	</li>
-	<li>
-		<cart-item></cart-item>
-		<cart-item-info></cart-item-info>
-	</li>
-
-	<li>
-		<cart-item></cart-item>
-		<cart-item-info></cart-item-info>
-	</li>
-	<li>
+	<li *ngFor="let product of products">
 		<cart-item></cart-item>
 		<cart-item-info></cart-item-info>
 	</li>
