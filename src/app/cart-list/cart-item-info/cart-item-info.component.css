@@ -1,0 +1,29 @@
+
+/* --------------------------------
+
+Product Info (title + price)
+
+-------------------------------- */
+.cd-item-info {
+  padding: 1em .5em 0;
+  color: #314d5d;
+  font-weight: bold;
+}
+.cd-item-info::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.cd-item-info b {
+  float: left;
+}
+.cd-item-info em {
+  float: right;
+  color: #5484a0;
+}
+.cd-item-info a {
+  color: #314d5d;
+}
+.cd-item-info a:hover {
+  text-decoration: underline;
+}
