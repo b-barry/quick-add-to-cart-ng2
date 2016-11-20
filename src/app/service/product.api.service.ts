@@ -1,33 +1,33 @@
 import { Injectable } from '@angular/core';
 
-export interface Item {
+export class Item {
   imageSrc: string;
   color: string;
   selected: boolean;
 }
-export interface Price {
+export class Price {
   red: string;
   blue: string;
   yellow: string;
 }
-export interface Product {
+export class Product {
   items: Item[];
   price: Price;
   name: string
 }
 
-export interface ColorCustomization {
+export class ColorCustomization {
   name: string;
   selected: boolean
 }
 
-export interface SizeCustomization {
+export class SizeCustomization {
   small: boolean;
   medium: boolean;
   large: boolean;
 }
 
-export interface Customization {
+export class Customization {
   color: ColorCustomization[];
   size: SizeCustomization;
 }

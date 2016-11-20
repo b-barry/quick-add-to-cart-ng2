@@ -1,7 +1,7 @@
 <ul class="cd-gallery">
 	<li *ngFor="let product of products">
 		<cart-item></cart-item>
-		<cart-item-info></cart-item-info>
+		<cart-item-info [productName]="product.name" [productPrice]="getPriceOfSelectedItemFromProduct(product)"></cart-item-info>
 	</li>
 </ul>
 <!-- cd-gallery -->
