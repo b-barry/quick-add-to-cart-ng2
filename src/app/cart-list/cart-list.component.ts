@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
 import { ProductApiService } from '../service';
 import { Product, Item } from '../service';
 @Component({
@@ -8,8 +8,8 @@ import { Product, Item } from '../service';
   providers: [ProductApiService]
 
 })
-export class CartListComponent {
-  @Input() products: Product[] = [];
+export class CartListComponent implements OnInit{
+  products: Product[] = [];
 
   constructor(private productApi: ProductApiService) {
   }
