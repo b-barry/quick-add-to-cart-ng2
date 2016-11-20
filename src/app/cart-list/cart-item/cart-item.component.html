@@ -1,9 +1,10 @@
 <div class="cd-single-item">
 	<a href="#0">
 		<ul class="cd-slider-wrapper">
-			<li class="selected"><img src="assets/img/thumb-1.jpg" alt="Preview image"></li>
-			<li class=""><img src="assets/img/thumb-2.jpg" alt="Preview image"></li>
-			<li><img src="assets/img/thumb-3.jpg" alt="Preview image"></li>
+			<li *ngFor="let item of productItems" [class.selected]="item.selected">
+				<img [src]="'assets/'+item.imageSrc" alt="Preview image">
+			</li>
+
 		</ul>
 	</a>
 
